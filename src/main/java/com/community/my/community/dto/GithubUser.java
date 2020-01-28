@@ -1,16 +1,16 @@
 package com.community.my.community.dto;
 
 public class GithubUser {
-    private String name;
+    private String login;
     private Long id;
     private String bio;
 
-    public String getName() {
-        return name;
+    public String getLogin() {
+        return login;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
     public Long getId() {

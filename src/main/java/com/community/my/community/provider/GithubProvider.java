@@ -30,7 +30,6 @@ public class GithubProvider {
             System.out.println("accesstoken="+access_token);
             return access_token;
         } catch (IOException e) {
-            e.printStackTrace();
         }
         return null;
     }
@@ -51,7 +50,6 @@ public class GithubProvider {
             GithubUser githubUser = JSON.parseObject(string, GithubUser.class);
             return githubUser;
         } catch (IOException e) {
-            e.printStackTrace();
         }
         return null;
     }
