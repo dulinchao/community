@@ -20,3 +20,11 @@ body{
     font-weight: normal;
     color:#999;
 }
+
+.menu .active {
+    color: #499ef3;
+}
+
+.profile .section{
+    margin-top: 15px;
+}
