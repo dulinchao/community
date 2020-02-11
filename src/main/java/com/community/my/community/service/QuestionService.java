@@ -55,7 +55,7 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public PaginationDTO list(Integer userId, Integer page, Integer size) {
+    public PaginationDTO list(Long userId, Integer page, Integer size) {
         PaginationDTO paginationDTO = new PaginationDTO();  //此类包含此页面所有要展示的问题以及页码信息
         Integer totalPage;
         QuestionExample questionExample = new QuestionExample();
@@ -90,10 +90,10 @@ public class QuestionService {
         return paginationDTO;
     }
 
-    public QuestionDTO getById(Integer id) {
+    public QuestionDTO getById(Long id) {
         Question question = questionMapper.selectByPrimaryKey(id);
         if(question==null){
-            throw new CustomizeException(CustomizeErrorCode.QUSTION_NOT_FOUND);
+            throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
         }
         QuestionDTO questionDTO = new QuestionDTO();
         BeanUtils.copyProperties(question,questionDTO);
@@ -106,6 +106,9 @@ public class QuestionService {
         if(question.getId()==null){
             question.setGmtCreate(System.currentTimeMillis());
             question.setGmtModified(question.getGmtCreate());
+            question.setCommentCount(0);
+            question.setViewCount(0);
+            question.setLikeCount(0);
             questionMapper.insert(question);
         }else {
             Question updateQuestion = new Question();
@@ -117,12 +120,12 @@ public class QuestionService {
             example.createCriteria().andIdEqualTo(question.getId());
             int updated = questionMapper.updateByExampleSelective(updateQuestion, example);
             if(updated!=1){
-                throw new CustomizeException(CustomizeErrorCode.QUSTION_NOT_FOUND);
+                throw new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
             }
         }
     }
 
-    public void incView(Integer id) {
+    public void incView(Long id) {
         Question question = new Question();
         question.setId(id);
         question.setViewCount(1);
