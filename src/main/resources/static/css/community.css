@@ -66,6 +66,14 @@ body{
 .menu .icon:hover{
     color: #499ef3;
 }
+.menu .comment-icon {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.menu .comment-icon :hover {
+    color: #499ef3;
+}
 .comments{
     margin-bottom: 15px;
     border-bottom: 1px solid #eee;
@@ -73,6 +81,9 @@ body{
 }
 .question-title{
     margin-top: 25px;
+}
+.question-tag{
+    margin-right:5px ;
 }
 .sub-comments{
     border-radius: 5px;

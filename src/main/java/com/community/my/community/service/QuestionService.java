@@ -42,7 +42,9 @@ public class QuestionService {
         }
         paginationDTO.setPagination(totalPage,page);
         Integer offset = size * (page - 1);
-        List<Question> questions = questionMapper.selectByExampleWithRowbounds(new QuestionExample(),new RowBounds(offset,size));
+        QuestionExample questionExample = new QuestionExample();
+        questionExample.setOrderByClause("gmt_create desc");
+        List<Question> questions = questionMapper.selectByExampleWithRowbounds(questionExample,new RowBounds(offset,size));
         List<QuestionDTO> questionDTOS = new ArrayList<>();
         for(Question question:questions){
             User user = userMapper.selectByPrimaryKey(question.getCreator());//用creator(即id)到user表中查询获取用户对象

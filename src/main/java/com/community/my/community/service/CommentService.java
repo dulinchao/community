@@ -4,10 +4,7 @@ import com.community.my.community.dto.CommentDTO;
 import com.community.my.community.enums.CommentTypeEnum;
 import com.community.my.community.exception.CustomizeErrorCode;
 import com.community.my.community.exception.CustomizeException;
-import com.community.my.community.mapper.CommentMapper;
-import com.community.my.community.mapper.QuestionExtMapper;
-import com.community.my.community.mapper.QuestionMapper;
-import com.community.my.community.mapper.UserMapper;
+import com.community.my.community.mapper.*;
 import com.community.my.community.model.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,6 +27,8 @@ public class CommentService {
     private QuestionExtMapper questionExtMapper;
     @Autowired
     private UserMapper userMapper;
+    @Autowired
+    private CommentExtMapper commentExtMapper;
     @Transactional
     public void insert(Comment comment) {
         if(comment.getParentId()==null || comment.getParentId()==0){
@@ -45,6 +44,11 @@ public class CommentService {
                 throw new CustomizeException(CustomizeErrorCode.COMMENT_NOT_FOUND);
             }
             commentMapper.insert(comment);
+            //增加评论数
+            Comment parentComment = new Comment();
+            parentComment.setId(comment.getParentId());
+            parentComment.setCommentCount(1);
+            commentExtMapper.incCommentCount(parentComment);
         }else {
             //回复问题
             Question question = questionMapper.selectByPrimaryKey(comment.getParentId());

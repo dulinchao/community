@@ -41,7 +41,7 @@ function collapseComments(e) {
                         "class": "menu"
                     }).append($("<span/>", {
                         "class": "pull-right",
-                        "html": moment(comment.gmtCreate).format('YYYY-MM-DD')
+                        "html": moment(comment.gmtCreate).format('YYYY-MM-DD h:mm:ss')
                     })));
 
                     var mediaElement = $("<div/>", {
@@ -68,7 +68,7 @@ function collapseComments(e) {
 }
 function comment(e) {
     var commentId = e.getAttribute("data-id");
-    var content = $("#input-"+commentId);
+    var content = $("#input-"+commentId).val();
     comment2target(commentId,2,content)
 }
 function comment2target(targetId,type,content) {
