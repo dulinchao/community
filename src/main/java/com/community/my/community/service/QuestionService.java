@@ -2,6 +2,7 @@ package com.community.my.community.service;
 
 import com.community.my.community.dto.PaginationDTO;
 import com.community.my.community.dto.QuestionDTO;
+import com.community.my.community.dto.QuestionQueryDTO;
 import com.community.my.community.exception.CustomizeErrorCode;
 import com.community.my.community.exception.CustomizeException;
 import com.community.my.community.mapper.QuestionExtMapper;
@@ -29,10 +30,22 @@ public class QuestionService {
     private QuestionExtMapper questionExtMapper;
     @Autowired
     private QuestionMapper questionMapper;
-    public PaginationDTO list(Integer page, Integer size) {
+    public PaginationDTO list(String search,Integer page, Integer size) {
+        if (StringUtils.isNotBlank(search)){
+            String[] tags = StringUtils.split(search, " ");
+            search = Arrays
+                    .stream(tags)
+                    .filter(StringUtils::isNotBlank)
+                    .map(t -> t.replace("+", "").replace("*", "").replace("?", ""))
+                    .filter(StringUtils::isNotBlank)
+                    .collect(Collectors.joining("|"));
+        }
+
         PaginationDTO paginationDTO = new PaginationDTO();  //此类包含此页面所有要展示的问题以及页码信息
         Integer totalPage;
-        Integer totalCount = (int)questionMapper.countByExample(new QuestionExample());
+        QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
+        questionQueryDTO.setSearch(search);
+        Integer totalCount = questionExtMapper.countBySearch(questionQueryDTO);
         if(totalCount % size == 0){
             totalPage = totalCount/size;
         }else {
@@ -48,7 +61,9 @@ public class QuestionService {
         Integer offset = size * (page - 1);
         QuestionExample questionExample = new QuestionExample();
         questionExample.setOrderByClause("gmt_create desc");
-        List<Question> questions = questionMapper.selectByExampleWithRowbounds(questionExample,new RowBounds(offset,size));
+        questionQueryDTO.setSize(size);
+        questionQueryDTO.setPage(offset);
+        List<Question> questions = questionExtMapper.selectBySearch(questionQueryDTO);
         List<QuestionDTO> questionDTOS = new ArrayList<>();
         for(Question question:questions){
             User user = userMapper.selectByPrimaryKey(question.getCreator());//用creator(即id)到user表中查询获取用户对象
