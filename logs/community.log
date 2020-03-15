@@ -1,42 +1,103 @@
-2020-03-13 08:32:24.093  INFO 11884 --- [restartedMain] c.c.my.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-HDU6RG7 with PID 11884 (F:\Learn\my_community\target\classes started by 78044 in F:\Learn\my_community)
-2020-03-13 08:32:24.101  INFO 11884 --- [restartedMain] c.c.my.community.CommunityApplication    : No active profile set, falling back to default profiles: default
-2020-03-13 08:32:24.195  INFO 11884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-03-13 08:32:24.196  INFO 11884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-03-13 08:32:24.257  WARN 11884 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2020-03-13 08:32:27.374  INFO 11884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8887 (http)
-2020-03-13 08:32:27.389  INFO 11884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-13 08:32:27.391  INFO 11884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-03-13 08:32:27.496  INFO 11884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-13 08:32:27.496  INFO 11884 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3298 ms
-2020-03-13 08:32:27.550  INFO 11884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-03-13 08:32:27.747  INFO 11884 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-03-13 08:32:27.753  INFO 11884 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
-2020-03-13 08:32:28.946  INFO 11884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-13 08:32:29.106  INFO 11884 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-03-13 08:32:29.936  INFO 11884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-03-13 08:32:29.993  INFO 11884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8887 (http) with context path ''
-2020-03-13 08:32:29.998  INFO 11884 --- [restartedMain] c.c.my.community.CommunityApplication    : Started CommunityApplication in 6.556 seconds (JVM running for 9.117)
-2020-03-13 08:34:53.229  INFO 11884 --- [http-nio-8887-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-03-13 08:34:53.229  INFO 11884 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-03-13 08:34:53.239  INFO 11884 --- [http-nio-8887-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-03-13 09:02:52.353  INFO 10564 --- [restartedMain] c.c.my.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-HDU6RG7 with PID 10564 (F:\Learn\my_community\target\classes started by 78044 in F:\Learn\my_community)
-2020-03-13 09:02:52.357  INFO 10564 --- [restartedMain] c.c.my.community.CommunityApplication    : No active profile set, falling back to default profiles: default
-2020-03-13 09:02:52.451  INFO 10564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-03-13 09:02:52.452  INFO 10564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-03-13 09:02:52.516  WARN 10564 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2020-03-13 09:02:54.861  INFO 10564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
-2020-03-13 09:02:54.870  INFO 10564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-03-13 09:02:54.870  INFO 10564 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-03-13 09:02:54.957  INFO 10564 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-03-13 09:02:54.957  INFO 10564 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2505 ms
-2020-03-13 09:02:55.006  INFO 10564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-03-13 09:02:55.221  INFO 10564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-03-13 09:02:55.229  INFO 10564 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
-2020-03-13 09:02:55.894  INFO 10564 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-03-13 09:02:55.959  INFO 10564 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-03-13 09:02:56.203  INFO 10564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-03-13 09:02:56.249  INFO 10564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
-2020-03-13 09:02:56.252  INFO 10564 --- [restartedMain] c.c.my.community.CommunityApplication    : Started CommunityApplication in 4.635 seconds (JVM running for 6.641)
-2020-03-13 09:03:42.101  INFO 10564 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-03-13 09:03:42.101  INFO 10564 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-03-13 09:03:42.111  INFO 10564 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-15 11:42:13.897  INFO 10256 --- [restartedMain] c.c.my.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-HDU6RG7 with PID 10256 (F:\Learn\my_community\target\classes started by 78044 in F:\Learn\my_community)
+2020-03-15 11:42:13.905  INFO 10256 --- [restartedMain] c.c.my.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2020-03-15 11:42:14.031  INFO 10256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-15 11:42:14.031  INFO 10256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-15 11:42:14.093  WARN 10256 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-15 11:42:17.182  INFO 10256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-15 11:42:17.194  INFO 10256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 11:42:17.194  INFO 10256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-15 11:42:17.306  INFO 10256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 11:42:17.307  INFO 10256 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3273 ms
+2020-03-15 11:42:17.351  INFO 10256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 11:42:17.530  INFO 10256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 11:42:17.536  INFO 10256 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-03-15 11:42:18.470  INFO 10256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 11:42:18.585  INFO 10256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-15 11:42:19.669  INFO 10256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-15 11:42:19.732  INFO 10256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-15 11:42:19.736  INFO 10256 --- [restartedMain] c.c.my.community.CommunityApplication    : Started CommunityApplication in 6.515 seconds (JVM running for 8.285)
+2020-03-15 11:42:28.021  INFO 10256 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 11:42:28.022  INFO 10256 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 11:42:28.032  INFO 10256 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-15 11:44:41.119  INFO 10872 --- [restartedMain] c.c.my.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-HDU6RG7 with PID 10872 (F:\Learn\my_community\target\classes started by 78044 in F:\Learn\my_community)
+2020-03-15 11:44:41.124  INFO 10872 --- [restartedMain] c.c.my.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2020-03-15 11:44:41.235  INFO 10872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-15 11:44:41.235  INFO 10872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-15 11:44:41.433  WARN 10872 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-15 11:44:43.028  INFO 10872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-15 11:44:43.041  INFO 10872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 11:44:43.042  INFO 10872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-15 11:44:43.272  INFO 10872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 11:44:43.272  INFO 10872 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2036 ms
+2020-03-15 11:44:43.339  INFO 10872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 11:44:43.544  INFO 10872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 11:44:43.551  INFO 10872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-03-15 11:44:44.492  INFO 10872 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 11:44:44.628  INFO 10872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-15 11:44:45.065  INFO 10872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-15 11:44:45.164  INFO 10872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-15 11:44:45.168  INFO 10872 --- [restartedMain] c.c.my.community.CommunityApplication    : Started CommunityApplication in 4.608 seconds (JVM running for 6.109)
+2020-03-15 11:44:48.879  INFO 10872 --- [http-nio-80-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 11:44:48.879  INFO 10872 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 11:44:48.889  INFO 10872 --- [http-nio-80-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-03-15 11:46:14.676  INFO 10872 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 11:46:14.699  INFO 10872 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-15 11:46:15.124  INFO 10872 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-15 11:46:16.406  INFO 10872 --- [restartedMain] c.c.my.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-HDU6RG7 with PID 10872 (F:\Learn\my_community\target\classes started by 78044 in F:\Learn\my_community)
+2020-03-15 11:46:16.408  INFO 10872 --- [restartedMain] c.c.my.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2020-03-15 11:46:17.221  WARN 10872 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-03-15 11:46:17.312  INFO 10872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-15 11:46:17.314  INFO 10872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 11:46:17.314  INFO 10872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-15 11:46:17.366  INFO 10872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 11:46:17.367  INFO 10872 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 954 ms
+2020-03-15 11:46:17.389  INFO 10872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-03-15 11:46:17.412  INFO 10872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-03-15 11:46:17.413  INFO 10872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-03-15 11:46:18.005  INFO 10872 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 11:46:18.057  INFO 10872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-15 11:46:18.469  INFO 10872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-15 11:46:18.509  INFO 10872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-15 11:46:18.512  INFO 10872 --- [restartedMain] c.c.my.community.CommunityApplication    : Started CommunityApplication in 2.163 seconds (JVM running for 99.452)
+2020-03-15 11:46:18.516  INFO 10872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-15 11:46:20.043  INFO 10872 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-15 11:46:20.044  INFO 10872 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-03-15 11:46:20.260  INFO 10872 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-03-15 11:46:20.791  INFO 10872 --- [restartedMain] c.c.my.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-HDU6RG7 with PID 10872 (F:\Learn\my_community\target\classes started by 78044 in F:\Learn\my_community)
+2020-03-15 11:46:20.791  INFO 10872 --- [restartedMain] c.c.my.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2020-03-15 11:46:22.430  WARN 10872 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2020-03-15 11:46:22.593  INFO 10872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-15 11:46:22.594  INFO 10872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 11:46:22.596  INFO 10872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-15 11:46:22.724  INFO 10872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 11:46:22.724  INFO 10872 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1928 ms
+2020-03-15 11:46:22.781  INFO 10872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-03-15 11:46:22.830  INFO 10872 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-03-15 11:46:22.831  INFO 10872 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-03-15 11:46:24.606  INFO 10872 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 11:46:24.632  INFO 10872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-15 11:46:24.847  INFO 10872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-15 11:46:24.880  INFO 10872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-15 11:46:24.882  INFO 10872 --- [restartedMain] c.c.my.community.CommunityApplication    : Started CommunityApplication in 4.133 seconds (JVM running for 105.823)
+2020-03-15 11:46:24.886  INFO 10872 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-03-15 11:49:31.834  INFO 7800 --- [restartedMain] c.c.my.community.CommunityApplication    : Starting CommunityApplication on DESKTOP-HDU6RG7 with PID 7800 (F:\Learn\my_community\target\classes started by 78044 in F:\Learn\my_community)
+2020-03-15 11:49:31.836  INFO 7800 --- [restartedMain] c.c.my.community.CommunityApplication    : No active profile set, falling back to default profiles: default
+2020-03-15 11:49:31.999  INFO 7800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-03-15 11:49:32.000  INFO 7800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-03-15 11:49:32.194  WARN 7800 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-03-15 11:49:34.202  INFO 7800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 80 (http)
+2020-03-15 11:49:34.221  INFO 7800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-15 11:49:34.222  INFO 7800 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-15 11:49:34.391  INFO 7800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-15 11:49:34.392  INFO 7800 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2391 ms
+2020-03-15 11:49:34.493  INFO 7800 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-15 11:49:34.761  INFO 7800 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-15 11:49:34.770  INFO 7800 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/community'
+2020-03-15 11:49:35.557  INFO 7800 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-15 11:49:35.627  INFO 7800 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-03-15 11:49:35.865  INFO 7800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-03-15 11:49:35.917  INFO 7800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 80 (http) with context path ''
+2020-03-15 11:49:35.921  INFO 7800 --- [restartedMain] c.c.my.community.CommunityApplication    : Started CommunityApplication in 4.756 seconds (JVM running for 6.212)
+2020-03-15 11:49:38.784  INFO 7800 --- [http-nio-80-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-15 11:49:38.784  INFO 7800 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-15 11:49:38.796  INFO 7800 --- [http-nio-80-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
